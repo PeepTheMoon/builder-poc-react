@@ -1,6 +1,6 @@
 import { BuilderComponent, builder } from '@builder.io/react';
 // import { Header } from '../components/Header';
-import '../components/Header';
+// import '../components/Header';
 
 builder.init('3c7e390ebd25467aa0bf62675258be66');
 
