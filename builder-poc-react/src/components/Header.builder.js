@@ -6,7 +6,7 @@ export const HeaderBuilderConfig = {
   inputs: [
     {
       name: 'title',
-      type: 'string',
+      type: 'text',
       required: true,
       defaultValue: 'Yooo check this header!'
     }

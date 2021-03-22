@@ -5,26 +5,29 @@ builder.init('3c7e390ebd25467aa0bf62675258be66');
 
 export const Header = () => (
   <>
-    <h1>This is the header as a page</h1>
-    <BuilderComponent
-    model="page" />
+    <h1>This is the header as a section</h1>
+  <BuilderComponent
+    model="header"
+  />
   </>
 )
 
 // export const Header = props => (
 //     <h1>
-//       {props.title}
+//       {props.headerTextContent}
 //       Some stuff
 //     </h1>
 //   )
 
 // Builder.registerComponent(
 //   Header, {
-//     name: 'Header',
+//     name: 'header',
 //     inputs: [
 //       { 
-//         name: 'title', 
-//         type: 'string' 
+//         name: 'headerTextContent', 
+//         type: 'text',
+//         required: true,
+//         defaultValue: 'Default header text' 
 //       }
 //     ]
 //   }
