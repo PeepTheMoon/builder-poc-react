@@ -27,7 +27,7 @@ export function DisplayPage(props) {
   <h1>This is the display page</h1>
   <BuilderComponent
     content={props.content}
-    model="page" />
+    model="display-page" />
     </>
 }
 

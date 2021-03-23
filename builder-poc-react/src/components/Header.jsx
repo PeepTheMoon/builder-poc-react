@@ -15,7 +15,6 @@ export const Header = () => (
 // export const Header = props => (
 //     <h1>
 //       {props.headerTextContent}
-//       Some stuff
 //     </h1>
 //   )
 
