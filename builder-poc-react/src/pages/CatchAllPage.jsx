@@ -3,9 +3,8 @@ import { useEffect, useState } from 'react';
 
 builder.init('3c7e390ebd25467aa0bf62675258be66')
 
-// I am still not sure how this page is working
-
 // Allows users to create new pages with unique URLs
+
 export default function CatchAllPage() {
   const [pageJson, setPage] = useState();
 
@@ -20,10 +19,10 @@ export default function CatchAllPage() {
     ? <h1>Loading...</h1>
     : pageJson
     ? <BuilderComponent 
-        //
         apiKey="3c7e390ebd25467aa0bf62675258be66"
+        // appears to load all models that are page models as defined in the dashboard.
         model="page" 
-        // In some places I am seeing this key as contentLoaded
-        content={pageJson} />
+        // It doesn't appear that components need to be passed props in the codebase to render the dashboard content.  This CatchAllPage component used the contentLoaded key to render the dashboard content as pageJson in react state.
+        contentLoaded={pageJson} />
     : console.error('Page not found.')
 }
