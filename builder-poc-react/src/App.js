@@ -15,7 +15,7 @@ export default function App() {
           <Route exact path="/" component={LandingPage} />
           <Route path="/display-page" component={DisplayPage} />
           <Route component={CatchAllPage} />
-          {/* <Route render={({ location }) => <CatchAllPage key={location.key} />} /> */}
+          <Route render={({ location }) => <CatchAllPage key={location.key} />} />
         </Switch>
       </Router>
     </>
