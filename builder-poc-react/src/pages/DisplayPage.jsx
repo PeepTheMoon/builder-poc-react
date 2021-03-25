@@ -9,7 +9,7 @@ export function DisplayPage(props) {
   return <>
   <h1>This is the display page</h1>
   <BuilderComponent
-    content={props.content}
+    contentLoaded={props.content}
     model="display-page" />
     </>
 }
