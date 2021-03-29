@@ -21,7 +21,7 @@ export default function CatchAllPage() {
     ? <BuilderComponent 
         apiKey="3c7e390ebd25467aa0bf62675258be66"
         // appears to load all models that are page models as defined in the dashboard.
-        model="page" 
+        model="header"
         // It doesn't appear that components need to be passed props in the codebase to render the dashboard content.  This CatchAllPage component used the contentLoaded key to render the dashboard content as pageJson in react state.
         contentLoaded={pageJson} />
     : console.error('Page not found.')
