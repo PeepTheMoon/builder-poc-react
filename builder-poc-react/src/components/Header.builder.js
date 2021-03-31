@@ -13,7 +13,7 @@ export const HeaderBuilderConfig = {
   ]
 };
 
-//When should I ise the following logic directly in a component vs extracting it to its own file like this one, to be ran in the builder-settings.js file?
+//When should I use the following logic directly in a component vs extracting it to its own file like this one, to be ran in the builder-settings.js file?
 
 // Builder.registerComponent(
 //   Header, {
