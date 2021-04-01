@@ -1,9 +1,11 @@
+import './builder-settings';
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { DisplayPage } from './pages/DisplayPage.jsx';
 import CatchAllPage from './pages/CatchAllPage.jsx';
 import { LandingPage } from './pages/LandingPage.jsx';
 import './App.css';
+
 
 export default function App() {
   return (

@@ -10,7 +10,7 @@ Builder.registerComponent(BuilderHeader, {
         name: 'backgroundColor', 
         type: 'color',
         required: true,
-        defaultValue: B8E986 
+        defaultValue: '#B8E986' 
       }, {
         name: 'textContent',
         type: 'text',
