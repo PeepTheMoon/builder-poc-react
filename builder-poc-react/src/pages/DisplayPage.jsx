@@ -10,7 +10,7 @@ export function DisplayPage() {
   // console.log(props)
   return <>  
   <BuilderComponent
-    model="header" 
+    model="display-page" 
     // contentLoaded={props.builderContent}
     />
     </>
