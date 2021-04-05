@@ -5,7 +5,7 @@ builder.init('3c7e390ebd25467aa0bf62675258be66');
 export function LandingPage() {
   return <>
     <BuilderComponent
-      model="header" />
+      model="page" />
     <h1>Landing/Home page</h1>
   </>
 }

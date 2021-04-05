@@ -16,8 +16,29 @@ if (OVERRIDE_INSERT_MENU) {
 
 // (optionally) set these to add your own sections of components arranged as you choose.  This can be used with or without `customInsertMenu` above
 Builder.register('insertMenu', {
-  name: 'Simple components',
+  name: 'Advanced dynamic components',
   items: [
-    { name: 'Header'}
+    { name: 'Header With Children',
+      item: {
+        component: {
+          name: 'Header',
+          options: {
+            backgroundColor: '#B8E986'
+          },
+        },
+        children: [
+          {
+            '@type': '@builder.io/sdk:Element',
+            component: {
+              name: 'Heading',
+              options: {
+                text: 'Editable heading text',
+                type: 'h1'
+              }
+            }
+          }
+        ]
+      }
+    }
   ]
 });
